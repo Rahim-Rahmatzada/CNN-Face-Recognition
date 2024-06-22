@@ -113,12 +113,12 @@ class TrainingModel:
             steps_per_epoch=train_generator.samples // 32,
             validation_data=validation_generator,
             validation_steps=validation_generator.samples // 32,
-            epochs=20,
+            epochs=40,
             callbacks=[early_stop, check_point, reduce_lr]
         )
 
         # Save the final model
-        self.model.save("emotion_model_V2.keras")
+        self.model.save("emotion_model_V3")
 
         return history
 
