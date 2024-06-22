@@ -5,6 +5,7 @@ from keras.models import Sequential
 from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout, BatchNormalization
 from keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
 
+# Dataset from https://www.kaggle.com/datasets/apollo2506/facial-recognition-dataset
 
 class TrainingModel:
     """
